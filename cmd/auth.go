@@ -6,7 +6,6 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"math/big"
 	"net/http"
@@ -20,6 +19,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/zmb3/spotify/v2"
 	spotifyauth "github.com/zmb3/spotify/v2/auth"
+	"go.uber.org/zap"
 	"golang.org/x/oauth2"
 )
 
@@ -164,7 +164,7 @@ func authenticate(ctx context.Context) (tok *oauth2.Token, err error) {
 		Addr:    "localhost:8080",
 	}
 
-	fmt.Println(authURL)
+	zap.L().Info("Please open the following URL in your browser to authenticate", zap.String("url", authURL))
 
 	go func() {
 		<-shutdownChan
