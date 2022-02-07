@@ -156,6 +156,8 @@ func authenticate(ctx context.Context) (tok *oauth2.Token, err error) {
 	router.Handle("/callback", http.HandlerFunc(func(rw http.ResponseWriter, r *http.Request) {
 		gotState = r.URL.Query().Get("state")
 		gotCode = r.URL.Query().Get("code")
+		// nolint
+		rw.Write([]byte("<html><body>You can close this window now.</body></html>"))
 		shutdownChan <- struct{}{}
 	}))
 
