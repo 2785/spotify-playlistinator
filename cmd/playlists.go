@@ -109,6 +109,8 @@ var listPlaylistCmd = &cobra.Command{
 				return err
 			}
 
+			defer f.Close()
+
 			err = gocsv.MarshalFile(rows, f)
 			if err != nil {
 				return err
@@ -139,6 +141,8 @@ var purgePlaylistCmd = &cobra.Command{
 		if err != nil {
 			return err
 		}
+
+		defer f.Close()
 
 		rows := []playlistRow{}
 		err = gocsv.UnmarshalFile(f, &rows)

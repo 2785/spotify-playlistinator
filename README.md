@@ -11,12 +11,21 @@ Usage:
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
   help        Help about any command
+  liked       Manage liked tracks
   playlists   utils to manage entire playlists
 
 Flags:
   -h, --help   help for spotify-playlistinator
 
 Use "spotify-playlistinator [command] --help" for more information about a command.
+```
+
+## Install
+
+On whatever platform you're on, get golang working (which can be easily done with [g](https://github.com/stefanmaric/g)). And
+
+```shell
+go install github.com/2785/spotify-playlistinator@latest
 ```
 
 ## Client ID
@@ -48,3 +57,7 @@ spotify-playlistinator playlists purge --csv playlists.csv
 This will proceed to delete all items marked as delete in the csv file.
 
 The purge comes with a `--dryrun` option in case you want a preview for how many things you're deleting
+
+## Liked Tracks management
+
+Literally the same thing with playlist management but for tracks
