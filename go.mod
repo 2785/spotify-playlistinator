@@ -3,7 +3,7 @@ module github.com/2785/spotify-playlistinator
 go 1.17
 
 require (
-	github.com/gammazero/workerpool v1.1.2
+	github.com/gammazero/workerpool v1.1.3
 	github.com/gocarina/gocsv v0.0.0-20211203214250-4735fba0c1d9
 	github.com/google/uuid v1.3.0
 	github.com/gorilla/mux v1.8.0
@@ -17,7 +17,7 @@ require (
 )
 
 require (
-	github.com/gammazero/deque v0.1.0 // indirect
+	github.com/gammazero/deque v0.2.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
