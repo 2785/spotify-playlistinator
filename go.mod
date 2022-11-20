@@ -1,6 +1,6 @@
 module github.com/2785/spotify-playlistinator
 
-go 1.17
+go 1.19
 
 require (
 	github.com/gammazero/workerpool v1.1.2
