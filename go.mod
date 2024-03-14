@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/gammazero/workerpool v1.1.2
-	github.com/gocarina/gocsv v0.0.0-20211203214250-4735fba0c1d9
+	github.com/gocarina/gocsv v0.0.0-20231116093920-b87c2d0e983a
 	github.com/google/uuid v1.3.0
 	github.com/gorilla/mux v1.8.0
 	github.com/mattn/go-isatty v0.0.14
