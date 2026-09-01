@@ -1,6 +1,6 @@
 module github.com/2785/spotify-playlistinator
 
-go 1.17
+go 1.25.0
 
 require (
 	github.com/gammazero/workerpool v1.1.2
@@ -13,7 +13,7 @@ require (
 	github.com/spf13/cobra v1.3.0
 	github.com/zmb3/spotify/v2 v2.0.1
 	go.uber.org/zap v1.21.0
-	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8
+	golang.org/x/oauth2 v0.36.0
 )
 
 require (
